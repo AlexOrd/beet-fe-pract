@@ -35,7 +35,8 @@ html {
 // ----------
 
 .main-container {
-  // max-width: 1200px;
+  max-width: 1800px;
+  width: 100%;
   background-color: #f4f6f7;
   font-family: Avenir New;
 
@@ -90,12 +91,26 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  &__img {
+    width: 568.13px;
+    height: 412.29px;
+  }
 }
 
 .agency-card {
   width: 400px;
+  &__btn {
+    background-color: #ff7f57;
+    color: white;
+    height: 40px;
+    width: 300px;
+    font-size: 14px;
+    border: none;
+  }
+  &__btn:hover {
+    transform: rotateZ(120deg);
+  }
 }
-
 
 // main h2 {
 //   color: #13253a;
@@ -106,24 +121,6 @@ html {
 //   font-size: 16px;
 //   color: #13253a;
 // }
-
-
-main button {
-  background-color: #ff7f57;
-  color: white;
-  height: 40px;
-  width: 300px;
-  font-size: 14px;
-  border: none;
-}
-main button:hover {
-  transform: rotateZ(120deg);
-}
-main img {
-  width: 568.13px;
-  height: 412.29px;
-}
-
 
 .secondmain {
   display: flex;
@@ -230,4 +227,31 @@ main img {
 }
 .secondmain--pink {
   color: #ff7f57;
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    width: 375px;
+  }
+  .header {
+    flex-direction: column;
+    width: 320px;
+  }
+  .agency-container {
+    flex-direction: column;
+    &__img {
+      width: 300px;
+      height: 250px;
+    }
+  }
+  .main-container__agency {
+    width: 400px;
+    // height: 300px;
+    // padding: 2%;
+  }
+  .agency-card {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
 }
