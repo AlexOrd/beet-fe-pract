@@ -41,7 +41,6 @@ body {
 .main-container__agency {
   padding-top: 60px;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -108,52 +107,42 @@ main img {
   height: 412.29px;
 }
 
-.main-container__services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 100%;
-}
-
 .services-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.services-container .services__subtitle {
+.services-container__subtitle {
   color: #2557ab;
   font-size: 22px;
   align-self: center;
 }
-.services-container .services__title {
+.services-container__title {
   color: #13253a;
   font-size: 38px;
   font-family: Avenir Next;
   line-height: 1.5;
 }
-
-.services__listing {
+.services-container__listing {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.services__items {
+.services-items {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.services__items--title {
+.services-items__title {
   color: #3b4d6c;
   font-size: 20px;
   font-weight: bold;
   font-family: Avenir Next;
 }
-
 .secondmain__details--inside:hover {
   transform: translateY(100px);
 }
