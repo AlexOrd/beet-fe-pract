@@ -1,8 +1,21 @@
 // header
 // header__item
 // header__item--red
+
+//Global reset //
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
-  height: 100%;
+  // height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -38,6 +51,7 @@ html {
   // max-width: 1200px;
   background-color: #f4f6f7;
   font-family: Avenir New;
+  margin: 0 auto;
 
   &__agency {
     padding-top: 60px;
@@ -96,7 +110,6 @@ html {
   width: 400px;
 }
 
-
 // main h2 {
 //   color: #13253a;
 //   font-size: 36px;
@@ -106,7 +119,6 @@ html {
 //   font-size: 16px;
 //   color: #13253a;
 // }
-
 
 main button {
   background-color: #ff7f57;
@@ -124,55 +136,61 @@ main img {
   height: 412.29px;
 }
 
-
-.secondmain {
+.main-container__services {
   display: flex;
+
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 93%;
+  // height: 93%;
   width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0%;
+  // position: absolute;
+  // top: 100%;
+  // left: 0%;
 }
-.secondmain--agency {
-  width: 100%;
-  height: 60%;
-  position: absolute;
-  top: 5%;
-}
-.insideWrapper {
+
+.services-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .services__subtitle {
+    color: #2557ab;
+    font-size: 22px;
+    align-self: center;
+    // margin: 0;
+  }
+
+  .services__title {
+    color: #13253a;
+    font-size: 38px;
+    font-family: Avenir Next;
+    line-height: 1.5;
+  }
 }
-.insideWrapper p:nth-child(1) {
-  color: #2557ab;
-  font-size: 16px;
-  align-self: flex-end;
-  margin-right: 30%;
-}
-.insideWrapper p:nth-of-type(2) {
-  color: #13253a;
-  font-size: 38px;
-  font-family: Avenir Next;
-  margin-bottom: 5%;
-}
-.secondmain__details {
+
+.services__listing {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
-.secondmain__details--inside {
-  width: 385px;
-  height: 180px;
+.services__items {
+  // width: 385px;
+  // height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  &--title {
+    color: #3b4d6c;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Avenir Next;
+
+  }
 }
 .secondmain__details--inside:hover {
   transform: translateY(100px);
